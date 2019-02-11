@@ -1,0 +1,8 @@
+<!--dans un fichier xml, on cree nos propres balises. ce fichier est utilisé pour tester nos iterations en lien avec le fchier iteration.php-->
+<personne>
+  <nom>Piszczyglowa</nom>
+  <prenom>Mag</prenom>
+  <email>blackowl01@orange.fr</email>
+  <ville>Murol</ville>
+  <cp>63000</cp>
+</personne>

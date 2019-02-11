@@ -1,0 +1,42 @@
+PHP Orienté Objet :
+
+-INCONVENIENTS : 
+* Techniquement on ne peut rien faire de plus avec poo qu'avec php procédural.
+* En général, l'approche orientée objet est moins intuitive que l'approche procédurale pour l'esprit humain.
+* Légère perte de performance (pouvant cependant être améliorée par divers moyens d'optimisation).
+
+-AVANTAGES : 
+* Modulariser afin d'avoir un code évolutif.
+* Encourage le travail collaboratif (il ne nécessite pas de rouvrir toutes les pages, l'UML permet de décrire le comportement de l'application et les intéractions entre les objets ).
+* Masquer la complexité grâce au principe d'encapsulation (tout le code est placé dans des classes, des objets).
+* Possibilité de documenter (commenter) le code.
+* Réutilisation du code, on part d'un projet déjà existant, effectuer un code type pouvant être repris sur d'autres projets. Code générique.
+C'est ce que donne des modules sur DRUPAL, c'est aussi de cette façon que sont nés les frameworks, avec des bibliothèques que les développeurs se constituent, ils réutilisent le code qu'ils avaient déjà créé.
+ex : APPLE ne repart pas de zéro pour la création d'un nouvel iphone, ils reprennent l'ancien et le  modifient pour sortir une meilleure version.
+* Simplifier la maintenance ou la mise à jour. Tout se passe dans la classe en question.
+* Assouplir le code, le factoriser au maximum, meilleure conceptualisation. Il y aura certes plus de pages mais elles seront moins chargées.
+* Plus d'options dans le langage (héritage, surcharge, abstraction, finalisation, interface...)
+* Il est plus facile de passer à d'autres langages (type C#, C++, JAVA, .net...), à d'autres technologies.
+
+CONCLUSION: pas besoin de POO pour des petits projets réalisés en procédural, mais pour les projets de grande envergure, avec des équipes de développement, mis à jour régulièrement, le POO est à privilégier.  
+
+ex:
+class Membre{
+    $pseudo, $mdp;
+    public function seConnecter();
+    public function sInscrire();
+}
+
+class Panier{
+    $nbProduit, $prix;
+    public function ajouterArticleDansPanier();
+    public function retirerArticleDuPanier();
+}
+
+-VOCABULAIRE :
+* Variable en procédural, devient propriété ou attribut en POO
+* Fonction = méthode
+* Instance = objet
+
+Une classe permet de contenir des variables avec des informations ainsi que des méthodes comportant des traitements. C'est un regroupement d'informations (plan, modèle de construction).
+Un objet c'est l'application du plan.
